@@ -1,0 +1,43 @@
+# 编程智能体扩散控制红蓝博弈 · 配置(不含密钥;key 从环境变量读)
+project: IDEA_Diffuse_Coding_Agents
+
+paths:
+  data: data
+  results: results
+  paper_drafts: paper_drafts
+
+api:
+  deepseek:
+    base_url: https://api.deepseek.com            # OpenAI 协议
+    base_url_anthropic: https://api.deepseek.com/anthropic
+    key_env: DEEPSEEK_API_KEY                       # 值私存,别进 git
+  qwen_coder_nas:
+    base_url: http://127.0.0.1:8000/v1              # NAS 上 vLLM 的 OpenAI 兼容端点(部署后按实际填)
+    key_env: QWEN_NAS_API_KEY                        # 本地 vLLM 通常任意占位
+
+roles:
+  generator:              # 被测强模型(会被诱导藏拙)
+    provider: deepseek
+    model: deepseek-v4-pro
+  ground_truth_judge:     # 知道答案的裁判:客观锚定为主 + 模糊部分盲评
+    objective_anchor: true        # 主干:对照 gold_patch/tests 计算,不是模型主观
+    fuzzy_llm:                    # 模糊残余部分才用 LLM,盲评降自我偏好
+      provider: deepseek
+      model: deepseek-v4-pro
+      blind: true
+      temperature: 0.0
+    cross_check:                  # 便宜模型复核,报一致性 κ
+      provider: deepseek
+      model: deepseek-v4-flash
+  weak_checker:           # 便宜实习生(蓝队打磨其说明书)
+    provider: qwen_coder_nas
+    model: qwen-coder
+  prompt_optimizer:       # 红/蓝队优化器(调用次数有限,蓝队 ≤ ~50)
+    provider: deepseek
+    model: deepseek-v4-pro
+
+dataset:
+  source: princeton-nlp/SWE-bench_Lite
+  split: test
+  pilot_n: 20
+  seed: 20260706

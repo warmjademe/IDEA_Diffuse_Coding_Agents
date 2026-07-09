@@ -1,0 +1,16 @@
+# 密钥/环境(绝不提交)
+*.key
+*.env
+.env
+.diffuse_env
+config.local.*
+# 数据集与实验产物(由采集/实验脚本生成,含第三方仓库代码,不入库)
+data/
+results/
+*.jsonl
+*.seen
+*.log
+# 缓存
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
