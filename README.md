@@ -10,6 +10,11 @@ output, three checkers, and omission, downplaying, and burying attacks. Main
 inference uses TeamRouter; the reference audit uses the official DeepSeek Pro
 endpoint. Reproducing the saved statistics makes **no API calls**.
 
+Two software-engineering PhDs with code-review experience each independently
+checked all 200 audit reviews (120 Python and 80 Java), and their checks agreed
+with the final Pro-recommended judgments. The author-confirmed completion and
+coverage are recorded in [publication_state.json](study/publication_state.json).
+
 ```sh
 python3 -m venv .venv
 . .venv/bin/activate
@@ -17,7 +22,7 @@ pip install -r study/code/requirements.txt
 python study/reproduce.py --output /tmp/jsep-code-review-reproduction
 ```
 
-Use Python 3.10 or newer (the recorded environment used 3.13.12). See the study
+Use Python 3.11 or newer (the recorded environment used 3.13.12). See the study
 README for exact coverage, missing outcomes, seeds, model versions, and costs.
 
 The principal findings are conditional: logs improve Python ranking and reduce

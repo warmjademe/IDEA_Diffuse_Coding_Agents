@@ -4,11 +4,15 @@
   "human_confirmation": {
     "source": "author_report",
     "reviewers": 2,
-    "background": "PhDs in software engineering",
+    "background": "PhDs in software engineering with code-review experience",
     "reported_completed": true,
-    "reported_outcome": "Agreement with Pro-recommended judgments after inspecting assessment materials",
+    "audit_sample_size": 200,
+    "audit_sample_by_language": {"Python": 120, "Java": 80},
+    "reviews_checked_per_reviewer": 200,
+    "each_reviewer_checked_full_sample": true,
+    "reviewers_worked_independently": true,
+    "reported_outcome": "Both reviewers independently checked the entire audit sample and confirmed agreement with the final Pro-recommended judgments",
     "per_item_individual_rating_files_provided": false,
-    "coverage_and_blinding": "Not specified in the recorded confirmation; no full-sample or blind-annotation claim is inferred",
     "synthetic_human_annotations_created": false
   },
   "d4_audit": {
@@ -20,5 +24,5 @@
     "constraint_or_no_improvement_rounds": 7,
     "all_final_rubrics_equal_D1": true
   },
-  "archival_status_note": "Original automated analysis status fields are retained as contemporaneous records; this file records later author confirmation and publication audit. No numerical results are overwritten."
+  "archival_status_note": "Original automated analysis fields, including human and human_author_check, describe the state before the later author confirmation and are retained as contemporaneous records. This file records the current completion, independent full-sample coverage, and outcome. No numerical results or individual human annotations are overwritten or synthesized."
 }

@@ -109,10 +109,17 @@ judgments define 36 adopted labels; 21 existing binary labels change and nine
 missing labels are filled. Confidence is a separate post hoc model self-rating,
 not calibrated probability. Original outputs and label views remain available.
 
-Human confirmation is an author-reported check by two software-engineering PhDs.
-No individual blind rating files or human kappa are synthesized. The historical
-analysis JSON's `human` field records the status at the time of that automated
-run; consult `publication_state.json` for the subsequent confirmation.
+Two software-engineering PhDs with code-review experience each independently
+checked all 200 audit reviews: 120 Python reviews and 80 Java reviews. Each
+reviewer checked the entire sample, and both confirmed agreement with the final
+Pro-recommended judgments. The authors confirmed this coverage and outcome;
+`publication_state.json` records the current status used in the manuscript.
+
+The historical analysis JSON's `human` field and `human_author_check` status
+describe the automated analysis before this confirmation. Those archived fields
+retain their original values; they do not describe the current completion
+status. Individual reviewer annotation files have not been supplied, and no
+such files or human agreement coefficients are synthesized.
 
 ## Main results and statistical scope
 

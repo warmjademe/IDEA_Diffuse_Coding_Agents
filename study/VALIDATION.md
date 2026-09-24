@@ -18,4 +18,8 @@ archives, leaving the original experiment directory unchanged.
   and documentation files; no credential-shaped content was found.
 
 These checks make no inference API calls and do not manufacture human ratings.
-Author-confirmed human review is described separately in `publication_state.json`.
+Separately, the authors confirmed that two software-engineering PhDs with
+code-review experience each independently checked all 200 audit reviews
+(120 Python and 80 Java), with both agreeing with the final Pro-recommended
+judgments. This current status is recorded in `publication_state.json`; the
+automated analysis retains its earlier status fields as historical records.
