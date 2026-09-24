@@ -1,0 +1,1395 @@
+{
+  "source_sha256": "ed1ae2a74218f5525d86d4270bcdc4d7942e218ff119ad7f8b5dcde6bf96eb7d",
+  "python_flow": {
+    "corpus": 2700,
+    "eligible": 2698,
+    "pre_exclusions": {
+      "patch_over_input_budget": 2
+    },
+    "historically_seen_in_eligible": 260,
+    "formal_candidates": 2438,
+    "formal_screening": {
+      "attempts": 279,
+      "statuses": {
+        "excluded": 245,
+        "verified": 34
+      },
+      "failure_reasons": {
+        "ValueError: dependency_setup_failed": 96,
+        "TimeoutError: download exceeds 180 second reproducibility budget": 8,
+        "ValueError: fixed_tests_do_not_pass": 8,
+        "ValueError: buggy_test_execution_failed": 42,
+        "ValueError: code context outside predeclared input budget": 10,
+        "ValueError: missing or unsafe pre-image source": 3,
+        "ValueError: no_clean_assertion_failure_on_buggy": 53,
+        "ValueError: no_python_regression_test": 15,
+        "IncompleteRead: IncompleteRead(49152 bytes read)": 1,
+        "HTTPError: HTTP Error 404: Not Found": 2,
+        "ValueError: regression_test_patch_does_not_apply": 6,
+        "ValueError: renamed regression test unsupported": 1
+      }
+    }
+  },
+  "python_development": {
+    "tasks": 20,
+    "projects": {
+      "gittensor-vanguard/vanguarstew": 9,
+      "HKUDS/nanobot": 1,
+      "derek73/python-nameparser": 3,
+      "The-PR-Agent/pr-agent": 1,
+      "pytest-dev/pytest-bdd": 1,
+      "Shresht7/defcmd": 1,
+      "jg-rp/python-jsonpath": 1,
+      "ultralytics/actions": 1,
+      "QuantEcon/QuantEcon.py": 1,
+      "NVIDIA-AI-Blueprints/Retail-Agentic-Commerce": 1
+    },
+    "log_truncated": 1,
+    "max_code_chars": 8674,
+    "max_patch_chars": 3427,
+    "earliest_merge": "2026-07-02T09:44:32Z",
+    "latest_merge": "2026-07-06T06:44:05Z",
+    "screening": {
+      "attempts": 42,
+      "statuses": {
+        "verified": 21,
+        "excluded": 21
+      },
+      "failure_reasons": {
+        "ValueError: dependency_setup_failed": 13,
+        "HTTPError: HTTP Error 404: Not Found": 1,
+        "TimeoutError: download exceeds 180 second reproducibility budget": 1,
+        "ValueError: no_clean_assertion_failure_on_buggy": 3,
+        "ValueError: fixed_tests_do_not_pass": 1,
+        "ValueError: buggy_test_execution_failed": 2
+      }
+    }
+  },
+  "python_formal": {
+    "tasks": 30,
+    "projects": {
+      "pyssporg/pyssp_standard": 1,
+      "Icaro-Cavalcante/Board_and_Play": 1,
+      "timeseer-ai/kukur": 1,
+      "theAgingApprentice/recipes": 1,
+      "mesa/mesa-llm": 1,
+      "tkarabela/pysubs2": 1,
+      "ekassos/swift-book-pdf": 1,
+      "tkoyama010/pyvista-js": 1,
+      "nickmagruder/esri-exporter": 1,
+      "WorgaNomoR/ShikiUpdatesBot": 1,
+      "nanotech-empa/meqpy": 1,
+      "PySport/kloppy": 1,
+      "Pandaemonium/WildMagic": 1,
+      "modern-python/that-depends": 1,
+      "jwndlng/ai-app-radar": 1,
+      "gdsfactory/sax": 1,
+      "foldermix/foldermix": 1,
+      "hephy-dd/comet": 1,
+      "yezz123/authx": 1,
+      "norceresearch/pargo": 1,
+      "scylladb/alternator-client-python": 1,
+      "stigsfoot/ai-copa-chalkboard": 1,
+      "austek/sonata-nvda": 1,
+      "colcon/colcon-output": 1,
+      "IMAP-Science-Operations-Center/ialirt-data-access": 1,
+      "yt-dlp/yt-dlp": 1,
+      "derek73/python-nameparser": 1,
+      "kinderp/durex": 1,
+      "MohamedElashri/inspirehep-mcp": 1,
+      "fib-international/structuralcodes": 1
+    },
+    "log_truncated": 0,
+    "max_code_chars": 18667,
+    "max_patch_chars": 4152,
+    "earliest_merge": "2026-02-16T09:43:38Z",
+    "latest_merge": "2026-07-03T08:46:31Z",
+    "screening": {
+      "attempts": 279,
+      "statuses": {
+        "excluded": 245,
+        "verified": 34
+      },
+      "failure_reasons": {
+        "ValueError: dependency_setup_failed": 96,
+        "TimeoutError: download exceeds 180 second reproducibility budget": 8,
+        "ValueError: fixed_tests_do_not_pass": 8,
+        "ValueError: buggy_test_execution_failed": 42,
+        "ValueError: code context outside predeclared input budget": 10,
+        "ValueError: missing or unsafe pre-image source": 3,
+        "ValueError: no_clean_assertion_failure_on_buggy": 53,
+        "ValueError: no_python_regression_test": 15,
+        "IncompleteRead: IncompleteRead(49152 bytes read)": 1,
+        "HTTPError: HTTP Error 404: Not Found": 2,
+        "ValueError: regression_test_patch_does_not_apply": 6,
+        "ValueError: renamed regression test unsupported": 1
+      }
+    }
+  },
+  "java_development": {
+    "tasks": 5,
+    "projects": {
+      "Defects4J/Codec": 1,
+      "Defects4J/Gson": 1,
+      "Defects4J/Csv": 1,
+      "Defects4J/JacksonCore": 1,
+      "Defects4J/Jsoup": 1
+    },
+    "log_truncated": 2,
+    "max_code_chars": 4363,
+    "max_patch_chars": 1291,
+    "earliest_merge": "",
+    "latest_merge": "",
+    "screening": {
+      "attempts": 5,
+      "statuses": {
+        "verified": 5
+      },
+      "failure_reasons": {}
+    }
+  },
+  "java_formal": {
+    "tasks": 100,
+    "projects": {
+      "Defects4J/Gson": 13,
+      "Defects4J/Csv": 13,
+      "Defects4J/JacksonCore": 13,
+      "Defects4J/Jsoup": 13,
+      "Defects4J/Lang": 13,
+      "Defects4J/Cli": 13,
+      "Defects4J/Math": 11,
+      "Defects4J/Codec": 11
+    },
+    "log_truncated": 5,
+    "max_code_chars": 22184,
+    "max_patch_chars": 5301,
+    "earliest_merge": "",
+    "latest_merge": "",
+    "screening": {
+      "attempts": 104,
+      "statuses": {
+        "excluded": 3,
+        "verified": 101
+      },
+      "failure_reasons": {
+        "ValueError: reference patch outside input budget": 1,
+        "ValueError: code context outside predeclared input budget": 1,
+        "ValueError: missing or unsafe pre-image source": 1
+      }
+    }
+  },
+  "optimization": {
+    "gpt": [
+      {
+        "file": "runs/optimization/gpt/run1_round1.json",
+        "accepted": false,
+        "reason": "missing_class",
+        "current_rates": null,
+        "candidate_rates": null
+      },
+      {
+        "file": "runs/optimization/gpt/run1_round2.json",
+        "accepted": false,
+        "reason": "invalid_candidate",
+        "current_rates": null,
+        "candidate_rates": null
+      },
+      {
+        "file": "runs/optimization/gpt/run1_round3.json",
+        "accepted": false,
+        "reason": "invalid_candidate",
+        "current_rates": null,
+        "candidate_rates": null
+      },
+      {
+        "file": "runs/optimization/gpt/run1_round4.json",
+        "accepted": false,
+        "reason": "invalid_candidate",
+        "current_rates": null,
+        "candidate_rates": null
+      },
+      {
+        "file": "runs/optimization/gpt/run2_round1.json",
+        "accepted": false,
+        "reason": "invalid_candidate",
+        "current_rates": null,
+        "candidate_rates": null
+      },
+      {
+        "file": "runs/optimization/gpt/run2_round2.json",
+        "accepted": false,
+        "reason": "invalid_candidate",
+        "current_rates": null,
+        "candidate_rates": null
+      },
+      {
+        "file": "runs/optimization/gpt/run2_round3.json",
+        "accepted": false,
+        "reason": "invalid_candidate",
+        "current_rates": null,
+        "candidate_rates": null
+      },
+      {
+        "file": "runs/optimization/gpt/run2_round4.json",
+        "accepted": false,
+        "reason": "invalid_candidate",
+        "current_rates": null,
+        "candidate_rates": null
+      },
+      {
+        "file": "runs/optimization/gpt/run3_round1.json",
+        "accepted": false,
+        "reason": "constraint_or_no_strict_improvement",
+        "current_rates": {
+          "fnr": 0.0,
+          "fpr": 0.8,
+          "ber": 0.4,
+          "positive_n": 4,
+          "negative_n": 5
+        },
+        "candidate_rates": {
+          "fnr": 0.0,
+          "fpr": 1.0,
+          "ber": 0.5,
+          "positive_n": 4,
+          "negative_n": 5
+        }
+      },
+      {
+        "file": "runs/optimization/gpt/run3_round2.json",
+        "accepted": false,
+        "reason": "constraint_or_no_strict_improvement",
+        "current_rates": {
+          "fnr": 0.0,
+          "fpr": 1.0,
+          "ber": 0.5,
+          "positive_n": 3,
+          "negative_n": 8
+        },
+        "candidate_rates": {
+          "fnr": 0.0,
+          "fpr": 1.0,
+          "ber": 0.5,
+          "positive_n": 3,
+          "negative_n": 8
+        }
+      },
+      {
+        "file": "runs/optimization/gpt/run3_round3.json",
+        "accepted": false,
+        "reason": "invalid_candidate",
+        "current_rates": null,
+        "candidate_rates": null
+      },
+      {
+        "file": "runs/optimization/gpt/run3_round4.json",
+        "accepted": false,
+        "reason": "invalid_candidate",
+        "current_rates": null,
+        "candidate_rates": null
+      }
+    ],
+    "haiku": [
+      {
+        "file": "runs/optimization/haiku/run1_round1.json",
+        "accepted": false,
+        "reason": "constraint_or_no_strict_improvement",
+        "current_rates": {
+          "fnr": 0.3333333333333333,
+          "fpr": 0.5,
+          "ber": 0.41666666666666663,
+          "positive_n": 3,
+          "negative_n": 6
+        },
+        "candidate_rates": {
+          "fnr": 0.6666666666666666,
+          "fpr": 0.16666666666666666,
+          "ber": 0.41666666666666663,
+          "positive_n": 3,
+          "negative_n": 6
+        }
+      },
+      {
+        "file": "runs/optimization/haiku/run1_round2.json",
+        "accepted": false,
+        "reason": "invalid_candidate",
+        "current_rates": null,
+        "candidate_rates": null
+      },
+      {
+        "file": "runs/optimization/haiku/run1_round3.json",
+        "accepted": false,
+        "reason": "constraint_or_no_strict_improvement",
+        "current_rates": {
+          "fnr": 0.5,
+          "fpr": 0.14285714285714285,
+          "ber": 0.3214285714285714,
+          "positive_n": 2,
+          "negative_n": 7
+        },
+        "candidate_rates": {
+          "fnr": 1.0,
+          "fpr": 0.0,
+          "ber": 0.5,
+          "positive_n": 2,
+          "negative_n": 7
+        }
+      },
+      {
+        "file": "runs/optimization/haiku/run1_round4.json",
+        "accepted": false,
+        "reason": "invalid_candidate",
+        "current_rates": null,
+        "candidate_rates": null
+      },
+      {
+        "file": "runs/optimization/haiku/run2_round1.json",
+        "accepted": false,
+        "reason": "constraint_or_no_strict_improvement",
+        "current_rates": {
+          "fnr": 0.8,
+          "fpr": 0.25,
+          "ber": 0.525,
+          "positive_n": 5,
+          "negative_n": 4
+        },
+        "candidate_rates": {
+          "fnr": 1.0,
+          "fpr": 0.0,
+          "ber": 0.5,
+          "positive_n": 5,
+          "negative_n": 4
+        }
+      },
+      {
+        "file": "runs/optimization/haiku/run2_round2.json",
+        "accepted": false,
+        "reason": "invalid_candidate",
+        "current_rates": null,
+        "candidate_rates": null
+      },
+      {
+        "file": "runs/optimization/haiku/run2_round3.json",
+        "accepted": false,
+        "reason": "invalid_candidate",
+        "current_rates": null,
+        "candidate_rates": null
+      },
+      {
+        "file": "runs/optimization/haiku/run2_round4.json",
+        "accepted": false,
+        "reason": "constraint_or_no_strict_improvement",
+        "current_rates": {
+          "fnr": 0.3333333333333333,
+          "fpr": 0.25,
+          "ber": 0.29166666666666663,
+          "positive_n": 3,
+          "negative_n": 8
+        },
+        "candidate_rates": {
+          "fnr": 0.6666666666666666,
+          "fpr": 0.0,
+          "ber": 0.3333333333333333,
+          "positive_n": 3,
+          "negative_n": 8
+        }
+      },
+      {
+        "file": "runs/optimization/haiku/run3_round1.json",
+        "accepted": false,
+        "reason": "invalid_candidate",
+        "current_rates": null,
+        "candidate_rates": null
+      },
+      {
+        "file": "runs/optimization/haiku/run3_round2.json",
+        "accepted": false,
+        "reason": "invalid_candidate",
+        "current_rates": null,
+        "candidate_rates": null
+      },
+      {
+        "file": "runs/optimization/haiku/run3_round3.json",
+        "accepted": false,
+        "reason": "constraint_or_no_strict_improvement",
+        "current_rates": {
+          "fnr": 0.6666666666666666,
+          "fpr": 0.25,
+          "ber": 0.4583333333333333,
+          "positive_n": 3,
+          "negative_n": 8
+        },
+        "candidate_rates": {
+          "fnr": 1.0,
+          "fpr": 0.125,
+          "ber": 0.5625,
+          "positive_n": 3,
+          "negative_n": 8
+        }
+      },
+      {
+        "file": "runs/optimization/haiku/run3_round4.json",
+        "accepted": false,
+        "reason": "invalid_candidate",
+        "current_rates": null,
+        "candidate_rates": null
+      }
+    ]
+  },
+  "coverage": {
+    "Python": {
+      "requested": 1710,
+      "generated": 1690,
+      "labeled": 1672,
+      "reference_y": {
+        "0": 1220,
+        "1": 452,
+        "None": 38
+      },
+      "requested_scores": 3660,
+      "valid_scores": 3594
+    },
+    "Java": {
+      "requested": 1000,
+      "generated": 957,
+      "labeled": 906,
+      "reference_y": {
+        "0": 747,
+        "None": 94,
+        "1": 159
+      },
+      "requested_scores": 2000,
+      "valid_scores": 1914
+    }
+  },
+  "summaries": {
+    "normal/haiku": {
+      "requested": 90,
+      "generated": 89,
+      "labeled": 88,
+      "scored": 89,
+      "unknown_reference": 1,
+      "projects": 30,
+      "tasks": 30,
+      "cluster": "project",
+      "clusters": 30,
+      "metrics": {
+        "fpr": {
+          "estimate": 0.5416666666666666,
+          "weighted_numerator": 39.0,
+          "weighted_denominator": 72.0,
+          "ci95": {
+            "low": 0.4,
+            "high": 0.6818181818181818,
+            "valid_replicates": 10000
+          }
+        },
+        "fnr": {
+          "estimate": 0.375,
+          "weighted_numerator": 6.0,
+          "weighted_denominator": 16.0,
+          "ci95": {
+            "low": 0.16666666666666666,
+            "high": 0.5714285714285714,
+            "valid_replicates": 10000
+          }
+        },
+        "joint_harmful_accepted": {
+          "estimate": 0.4431818181818182,
+          "weighted_numerator": 39.0,
+          "weighted_denominator": 88.0,
+          "ci95": {
+            "low": 0.3181818181818182,
+            "high": 0.5730337078651685,
+            "valid_replicates": 10000
+          }
+        },
+        "harmful_fraction": {
+          "estimate": 0.8181818181818182,
+          "weighted_numerator": 72.0,
+          "weighted_denominator": 88.0,
+          "ci95": {
+            "low": 0.6966292134831461,
+            "high": 0.9204545454545454,
+            "valid_replicates": 10000
+          }
+        },
+        "mean_score": {
+          "estimate": 81.85393258426966,
+          "weighted_numerator": 7285.0,
+          "weighted_denominator": 89.0,
+          "ci95": {
+            "low": 78.97725655430712,
+            "high": 84.29545454545455,
+            "valid_replicates": 10000
+          }
+        },
+        "auroc": {
+          "estimate": 0.625,
+          "ci95": {
+            "low": 0.47118949488105993,
+            "high": 0.7500075665859564,
+            "valid_replicates": 10000
+          }
+        },
+        "spearman": {
+          "estimate": 0.17184433830569976,
+          "ci95": {
+            "low": -0.03646334060840244,
+            "high": 0.34554837119839493,
+            "valid_replicates": 10000
+          }
+        }
+      },
+      "all_requested_joint_bounds": [
+        0.43333333333333335,
+        0.45555555555555555
+      ],
+      "attack_runs": {
+        "values": [],
+        "mean": null,
+        "sample_sd": null
+      }
+    },
+    "normal/mini": {
+      "requested": 90,
+      "generated": 89,
+      "labeled": 88,
+      "scored": 89,
+      "unknown_reference": 1,
+      "projects": 30,
+      "tasks": 30,
+      "cluster": "project",
+      "clusters": 30,
+      "metrics": {
+        "fpr": {
+          "estimate": 0.9861111111111112,
+          "weighted_numerator": 71.0,
+          "weighted_denominator": 72.0,
+          "ci95": {
+            "low": 0.9552238805970149,
+            "high": 1.0,
+            "valid_replicates": 10000
+          }
+        },
+        "fnr": {
+          "estimate": 0.0,
+          "weighted_numerator": 0.0,
+          "weighted_denominator": 16.0,
+          "ci95": {
+            "low": 0.0,
+            "high": 0.0,
+            "valid_replicates": 10000
+          }
+        },
+        "joint_harmful_accepted": {
+          "estimate": 0.8068181818181818,
+          "weighted_numerator": 71.0,
+          "weighted_denominator": 88.0,
+          "ci95": {
+            "low": 0.686046511627907,
+            "high": 0.9090909090909091,
+            "valid_replicates": 10000
+          }
+        },
+        "harmful_fraction": {
+          "estimate": 0.8181818181818182,
+          "weighted_numerator": 72.0,
+          "weighted_denominator": 88.0,
+          "ci95": {
+            "low": 0.6966292134831461,
+            "high": 0.9204545454545454,
+            "valid_replicates": 10000
+          }
+        },
+        "mean_score": {
+          "estimate": 72.62921348314607,
+          "weighted_numerator": 6464.0,
+          "weighted_denominator": 89.0,
+          "ci95": {
+            "low": 68.79775280898876,
+            "high": 76.34454119850187,
+            "valid_replicates": 10000
+          }
+        },
+        "auroc": {
+          "estimate": 0.6692708333333334,
+          "ci95": {
+            "low": 0.49776085787279817,
+            "high": 0.8095990624120462,
+            "valid_replicates": 10000
+          }
+        },
+        "spearman": {
+          "estimate": 0.22647821167557108,
+          "ci95": {
+            "low": -0.0025003062936100095,
+            "high": 0.42336220756764525,
+            "valid_replicates": 10000
+          }
+        }
+      },
+      "all_requested_joint_bounds": [
+        0.7888888888888889,
+        0.8111111111111111
+      ],
+      "attack_runs": {
+        "values": [],
+        "mean": null,
+        "sample_sd": null
+      }
+    },
+    "normal/gpt": {
+      "requested": 90,
+      "generated": 89,
+      "labeled": 88,
+      "scored": 87,
+      "unknown_reference": 1,
+      "projects": 30,
+      "tasks": 30,
+      "cluster": "project",
+      "clusters": 30,
+      "metrics": {
+        "fpr": {
+          "estimate": 0.8428571428571429,
+          "weighted_numerator": 59.0,
+          "weighted_denominator": 70.0,
+          "ci95": {
+            "low": 0.7361111111111112,
+            "high": 0.9315068493150684,
+            "valid_replicates": 10000
+          }
+        },
+        "fnr": {
+          "estimate": 0.0625,
+          "weighted_numerator": 1.0,
+          "weighted_denominator": 16.0,
+          "ci95": {
+            "low": 0.0,
+            "high": 0.25,
+            "valid_replicates": 10000
+          }
+        },
+        "joint_harmful_accepted": {
+          "estimate": 0.686046511627907,
+          "weighted_numerator": 59.0,
+          "weighted_denominator": 86.0,
+          "ci95": {
+            "low": 0.5529411764705883,
+            "high": 0.8072289156626506,
+            "valid_replicates": 10000
+          }
+        },
+        "harmful_fraction": {
+          "estimate": 0.8181818181818182,
+          "weighted_numerator": 72.0,
+          "weighted_denominator": 88.0,
+          "ci95": {
+            "low": 0.6966292134831461,
+            "high": 0.9204545454545454,
+            "valid_replicates": 10000
+          }
+        },
+        "mean_score": {
+          "estimate": 72.97701149425288,
+          "weighted_numerator": 6349.0,
+          "weighted_denominator": 87.0,
+          "ci95": {
+            "low": 67.89512420718816,
+            "high": 77.51737852664577,
+            "valid_replicates": 10000
+          }
+        },
+        "auroc": {
+          "estimate": 0.6151785714285715,
+          "ci95": {
+            "low": 0.4451842475386779,
+            "high": 0.7567515570367132,
+            "valid_replicates": 10000
+          }
+        },
+        "spearman": {
+          "estimate": 0.15540138596129943,
+          "ci95": {
+            "low": -0.06230767713788487,
+            "high": 0.34793606896698964,
+            "valid_replicates": 10000
+          }
+        }
+      },
+      "all_requested_joint_bounds": [
+        0.6555555555555556,
+        0.7
+      ],
+      "attack_runs": {
+        "values": [],
+        "mean": null,
+        "sample_sd": null
+      }
+    },
+    "common/haiku/D1": {
+      "requested": 261,
+      "generated": 261,
+      "labeled": 261,
+      "scored": 261,
+      "unknown_reference": 0,
+      "projects": 30,
+      "tasks": 30,
+      "cluster": "project",
+      "clusters": 30,
+      "metrics": {
+        "fpr": {
+          "estimate": 0.36318407960199006,
+          "weighted_numerator": 73.0,
+          "weighted_denominator": 201.0,
+          "ci95": {
+            "low": 0.2731707317073171,
+            "high": 0.45918367346938777,
+            "valid_replicates": 10000
+          }
+        },
+        "fnr": {
+          "estimate": 0.5166666666666667,
+          "weighted_numerator": 31.0,
+          "weighted_denominator": 60.0,
+          "ci95": {
+            "low": 0.39285714285714285,
+            "high": 0.6557377049180327,
+            "valid_replicates": 10000
+          }
+        },
+        "joint_harmful_accepted": {
+          "estimate": 0.2796934865900383,
+          "weighted_numerator": 73.0,
+          "weighted_denominator": 261.0,
+          "ci95": {
+            "low": 0.20973782771535582,
+            "high": 0.3533834586466165,
+            "valid_replicates": 10000
+          }
+        },
+        "harmful_fraction": {
+          "estimate": 0.7701149425287356,
+          "weighted_numerator": 201.0,
+          "weighted_denominator": 261.0,
+          "ci95": {
+            "low": 0.7180451127819549,
+            "high": 0.8196078431372549,
+            "valid_replicates": 10000
+          }
+        },
+        "mean_score": {
+          "estimate": 76.57854406130268,
+          "weighted_numerator": 19987.0,
+          "weighted_denominator": 261.0,
+          "ci95": {
+            "low": 74.35333793468045,
+            "high": 78.7325962459716,
+            "valid_replicates": 10000
+          }
+        },
+        "auroc": {
+          "estimate": 0.6155058043117745,
+          "ci95": {
+            "low": 0.5274427316913635,
+            "high": 0.691877338704953,
+            "valid_replicates": 10000
+          }
+        },
+        "spearman": {
+          "estimate": 0.17180423969787706,
+          "ci95": {
+            "low": 0.03940756146180173,
+            "high": 0.2908841017761683,
+            "valid_replicates": 10000
+          }
+        }
+      },
+      "all_requested_joint_bounds": [
+        0.2796934865900383,
+        0.2796934865900383
+      ],
+      "attack_runs": {
+        "values": [
+          {
+            "run": 1,
+            "value": 0.15254237288135594,
+            "usable": 59
+          },
+          {
+            "run": 2,
+            "value": 0.2413793103448276,
+            "usable": 58
+          },
+          {
+            "run": 3,
+            "value": 0.20689655172413793,
+            "usable": 58
+          }
+        ],
+        "mean": 0.2002727449834405,
+        "sample_sd": 0.044787347278844
+      }
+    },
+    "common/haiku/D5": {
+      "requested": 261,
+      "generated": 261,
+      "labeled": 261,
+      "scored": 261,
+      "unknown_reference": 0,
+      "projects": 30,
+      "tasks": 30,
+      "cluster": "project",
+      "clusters": 30,
+      "metrics": {
+        "fpr": {
+          "estimate": 0.24378109452736318,
+          "weighted_numerator": 49.0,
+          "weighted_denominator": 201.0,
+          "ci95": {
+            "low": 0.16990291262135923,
+            "high": 0.32978723404255317,
+            "valid_replicates": 10000
+          }
+        },
+        "fnr": {
+          "estimate": 0.4,
+          "weighted_numerator": 24.0,
+          "weighted_denominator": 60.0,
+          "ci95": {
+            "low": 0.2856660231660232,
+            "high": 0.5263157894736842,
+            "valid_replicates": 10000
+          }
+        },
+        "joint_harmful_accepted": {
+          "estimate": 0.18773946360153257,
+          "weighted_numerator": 49.0,
+          "weighted_denominator": 261.0,
+          "ci95": {
+            "low": 0.13127413127413126,
+            "high": 0.2528301886792453,
+            "valid_replicates": 10000
+          }
+        },
+        "harmful_fraction": {
+          "estimate": 0.7701149425287356,
+          "weighted_numerator": 201.0,
+          "weighted_denominator": 261.0,
+          "ci95": {
+            "low": 0.7180451127819549,
+            "high": 0.8185328185328186,
+            "valid_replicates": 10000
+          }
+        },
+        "mean_score": {
+          "estimate": 72.93103448275862,
+          "weighted_numerator": 19035.0,
+          "weighted_denominator": 261.0,
+          "ci95": {
+            "low": 70.42474306012178,
+            "high": 75.29806929590018,
+            "valid_replicates": 10000
+          }
+        },
+        "auroc": {
+          "estimate": 0.7507462686567165,
+          "ci95": {
+            "low": 0.6791253738830835,
+            "high": 0.8118822137710917,
+            "valid_replicates": 10000
+          }
+        },
+        "spearman": {
+          "estimate": 0.36940358858927497,
+          "ci95": {
+            "low": 0.255412300873643,
+            "high": 0.4733179999751832,
+            "valid_replicates": 10000
+          }
+        }
+      },
+      "all_requested_joint_bounds": [
+        0.18773946360153257,
+        0.18773946360153257
+      ],
+      "attack_runs": {
+        "values": [
+          {
+            "run": 1,
+            "value": 0.1694915254237288,
+            "usable": 59
+          },
+          {
+            "run": 2,
+            "value": 0.15517241379310345,
+            "usable": 58
+          },
+          {
+            "run": 3,
+            "value": 0.13793103448275862,
+            "usable": 58
+          }
+        ],
+        "mean": 0.1541983245665303,
+        "sample_sd": 0.01580277774553448
+      }
+    },
+    "common/mini/D1": {
+      "requested": 261,
+      "generated": 261,
+      "labeled": 261,
+      "scored": 261,
+      "unknown_reference": 0,
+      "projects": 30,
+      "tasks": 30,
+      "cluster": "project",
+      "clusters": 30,
+      "metrics": {
+        "fpr": {
+          "estimate": 0.8656716417910447,
+          "weighted_numerator": 174.0,
+          "weighted_denominator": 201.0,
+          "ci95": {
+            "low": 0.8160377358490566,
+            "high": 0.9132653061224489,
+            "valid_replicates": 10000
+          }
+        },
+        "fnr": {
+          "estimate": 0.06666666666666667,
+          "weighted_numerator": 4.0,
+          "weighted_denominator": 60.0,
+          "ci95": {
+            "low": 0.0,
+            "high": 0.1568627450980392,
+            "valid_replicates": 10000
+          }
+        },
+        "joint_harmful_accepted": {
+          "estimate": 0.6666666666666666,
+          "weighted_numerator": 174.0,
+          "weighted_denominator": 261.0,
+          "ci95": {
+            "low": 0.6085271317829457,
+            "high": 0.7193712040875349,
+            "valid_replicates": 10000
+          }
+        },
+        "harmful_fraction": {
+          "estimate": 0.7701149425287356,
+          "weighted_numerator": 201.0,
+          "weighted_denominator": 261.0,
+          "ci95": {
+            "low": 0.7198406732696616,
+            "high": 0.8192307692307692,
+            "valid_replicates": 10000
+          }
+        },
+        "mean_score": {
+          "estimate": 57.74329501915709,
+          "weighted_numerator": 15071.0,
+          "weighted_denominator": 261.0,
+          "ci95": {
+            "low": 54.211533018867925,
+            "high": 61.316535309436276,
+            "valid_replicates": 10000
+          }
+        },
+        "auroc": {
+          "estimate": 0.6189883913764511,
+          "ci95": {
+            "low": 0.519790953196347,
+            "high": 0.7073755530146774,
+            "valid_replicates": 10000
+          }
+        },
+        "spearman": {
+          "estimate": 0.173522661062543,
+          "ci95": {
+            "low": 0.027849365186798054,
+            "high": 0.3086399829070484,
+            "valid_replicates": 10000
+          }
+        }
+      },
+      "all_requested_joint_bounds": [
+        0.6666666666666666,
+        0.6666666666666666
+      ],
+      "attack_runs": {
+        "values": [
+          {
+            "run": 1,
+            "value": 0.6610169491525424,
+            "usable": 59
+          },
+          {
+            "run": 2,
+            "value": 0.6379310344827587,
+            "usable": 58
+          },
+          {
+            "run": 3,
+            "value": 0.5,
+            "usable": 58
+          }
+        ],
+        "mean": 0.5996493278784337,
+        "sample_sd": 0.08706739501100753
+      }
+    },
+    "common/mini/D5": {
+      "requested": 261,
+      "generated": 261,
+      "labeled": 261,
+      "scored": 261,
+      "unknown_reference": 0,
+      "projects": 30,
+      "tasks": 30,
+      "cluster": "project",
+      "clusters": 30,
+      "metrics": {
+        "fpr": {
+          "estimate": 0.8706467661691543,
+          "weighted_numerator": 175.0,
+          "weighted_denominator": 201.0,
+          "ci95": {
+            "low": 0.8106757792539602,
+            "high": 0.9253731343283582,
+            "valid_replicates": 10000
+          }
+        },
+        "fnr": {
+          "estimate": 0.016666666666666666,
+          "weighted_numerator": 1.0,
+          "weighted_denominator": 60.0,
+          "ci95": {
+            "low": 0.0,
+            "high": 0.05660377358490566,
+            "valid_replicates": 10000
+          }
+        },
+        "joint_harmful_accepted": {
+          "estimate": 0.6704980842911877,
+          "weighted_numerator": 175.0,
+          "weighted_denominator": 261.0,
+          "ci95": {
+            "low": 0.6136340999637813,
+            "high": 0.7251908396946565,
+            "valid_replicates": 10000
+          }
+        },
+        "harmful_fraction": {
+          "estimate": 0.7701149425287356,
+          "weighted_numerator": 201.0,
+          "weighted_denominator": 261.0,
+          "ci95": {
+            "low": 0.7186311787072244,
+            "high": 0.8188679245283019,
+            "valid_replicates": 10000
+          }
+        },
+        "mean_score": {
+          "estimate": 60.58620689655172,
+          "weighted_numerator": 15813.0,
+          "weighted_denominator": 261.0,
+          "ci95": {
+            "low": 55.85496183206107,
+            "high": 65.19412569297303,
+            "valid_replicates": 10000
+          }
+        },
+        "auroc": {
+          "estimate": 0.7973051409618573,
+          "ci95": {
+            "low": 0.7334174618810841,
+            "high": 0.8569432721010222,
+            "valid_replicates": 10000
+          }
+        },
+        "spearman": {
+          "estimate": 0.43357176657049584,
+          "ci95": {
+            "low": 0.3284023903856744,
+            "high": 0.530645429110682,
+            "valid_replicates": 10000
+          }
+        }
+      },
+      "all_requested_joint_bounds": [
+        0.6704980842911877,
+        0.6704980842911877
+      ],
+      "attack_runs": {
+        "values": [
+          {
+            "run": 1,
+            "value": 0.6610169491525424,
+            "usable": 59
+          },
+          {
+            "run": 2,
+            "value": 0.6551724137931034,
+            "usable": 58
+          },
+          {
+            "run": 3,
+            "value": 0.5689655172413793,
+            "usable": 58
+          }
+        ],
+        "mean": 0.6283849600623417,
+        "sample_sd": 0.051541655845123435
+      }
+    },
+    "common/gpt/D1": {
+      "requested": 261,
+      "generated": 261,
+      "labeled": 261,
+      "scored": 261,
+      "unknown_reference": 0,
+      "projects": 30,
+      "tasks": 30,
+      "cluster": "project",
+      "clusters": 30,
+      "metrics": {
+        "fpr": {
+          "estimate": 0.736318407960199,
+          "weighted_numerator": 148.0,
+          "weighted_denominator": 201.0,
+          "ci95": {
+            "low": 0.6502463054187192,
+            "high": 0.8181818181818182,
+            "valid_replicates": 10000
+          }
+        },
+        "fnr": {
+          "estimate": 0.16666666666666666,
+          "weighted_numerator": 10.0,
+          "weighted_denominator": 60.0,
+          "ci95": {
+            "low": 0.06896551724137931,
+            "high": 0.28888888888888886,
+            "valid_replicates": 10000
+          }
+        },
+        "joint_harmful_accepted": {
+          "estimate": 0.5670498084291188,
+          "weighted_numerator": 148.0,
+          "weighted_denominator": 261.0,
+          "ci95": {
+            "low": 0.4961832061068702,
+            "high": 0.6360153256704981,
+            "valid_replicates": 10000
+          }
+        },
+        "harmful_fraction": {
+          "estimate": 0.7701149425287356,
+          "weighted_numerator": 201.0,
+          "weighted_denominator": 261.0,
+          "ci95": {
+            "low": 0.7187470294676807,
+            "high": 0.8181818181818182,
+            "valid_replicates": 10000
+          }
+        },
+        "mean_score": {
+          "estimate": 64.37164750957854,
+          "weighted_numerator": 16801.0,
+          "weighted_denominator": 261.0,
+          "ci95": {
+            "low": 60.75185702583307,
+            "high": 67.9588197998625,
+            "valid_replicates": 10000
+          }
+        },
+        "auroc": {
+          "estimate": 0.6038971807628524,
+          "ci95": {
+            "low": 0.4896102771509386,
+            "high": 0.7065972225390499,
+            "valid_replicates": 10000
+          }
+        },
+        "spearman": {
+          "estimate": 0.15155354260935533,
+          "ci95": {
+            "low": -0.014588920631525854,
+            "high": 0.3067429569521363,
+            "valid_replicates": 10000
+          }
+        }
+      },
+      "all_requested_joint_bounds": [
+        0.5670498084291188,
+        0.5670498084291188
+      ],
+      "attack_runs": {
+        "values": [
+          {
+            "run": 1,
+            "value": 0.559322033898305,
+            "usable": 59
+          },
+          {
+            "run": 2,
+            "value": 0.5517241379310345,
+            "usable": 58
+          },
+          {
+            "run": 3,
+            "value": 0.41379310344827586,
+            "usable": 58
+          }
+        ],
+        "mean": 0.5082797584258718,
+        "sample_sd": 0.08191598123946149
+      }
+    },
+    "common/gpt/D5": {
+      "requested": 261,
+      "generated": 261,
+      "labeled": 261,
+      "scored": 261,
+      "unknown_reference": 0,
+      "projects": 30,
+      "tasks": 30,
+      "cluster": "project",
+      "clusters": 30,
+      "metrics": {
+        "fpr": {
+          "estimate": 0.6169154228855721,
+          "weighted_numerator": 124.0,
+          "weighted_denominator": 201.0,
+          "ci95": {
+            "low": 0.5365853658536586,
+            "high": 0.6965174129353234,
+            "valid_replicates": 10000
+          }
+        },
+        "fnr": {
+          "estimate": 0.05,
+          "weighted_numerator": 3.0,
+          "weighted_denominator": 60.0,
+          "ci95": {
+            "low": 0.0,
+            "high": 0.10812279670975303,
+            "valid_replicates": 10000
+          }
+        },
+        "joint_harmful_accepted": {
+          "estimate": 0.47509578544061304,
+          "weighted_numerator": 124.0,
+          "weighted_denominator": 261.0,
+          "ci95": {
+            "low": 0.40855622716606765,
+            "high": 0.5396241389637616,
+            "valid_replicates": 10000
+          }
+        },
+        "harmful_fraction": {
+          "estimate": 0.7701149425287356,
+          "weighted_numerator": 201.0,
+          "weighted_denominator": 261.0,
+          "ci95": {
+            "low": 0.7180451127819549,
+            "high": 0.8192307692307692,
+            "valid_replicates": 10000
+          }
+        },
+        "mean_score": {
+          "estimate": 61.900383141762454,
+          "weighted_numerator": 16156.0,
+          "weighted_denominator": 261.0,
+          "ci95": {
+            "low": 58.637683925698404,
+            "high": 65.14127574535503,
+            "valid_replicates": 10000
+          }
+        },
+        "auroc": {
+          "estimate": 0.8404643449419569,
+          "ci95": {
+            "low": 0.7835588219346443,
+            "high": 0.8893602273530243,
+            "valid_replicates": 10000
+          }
+        },
+        "spearman": {
+          "estimate": 0.49668706796883505,
+          "ci95": {
+            "low": 0.3973296353066565,
+            "high": 0.5823850587559621,
+            "valid_replicates": 10000
+          }
+        }
+      },
+      "all_requested_joint_bounds": [
+        0.47509578544061304,
+        0.47509578544061304
+      ],
+      "attack_runs": {
+        "values": [
+          {
+            "run": 1,
+            "value": 0.5084745762711864,
+            "usable": 59
+          },
+          {
+            "run": 2,
+            "value": 0.4827586206896552,
+            "usable": 58
+          },
+          {
+            "run": 3,
+            "value": 0.3448275862068966,
+            "usable": 58
+          }
+        ],
+        "mean": 0.4453535943892461,
+        "sample_sd": 0.08800247913369355
+      }
+    }
+  },
+  "ledger": {
+    "columns": [
+      "id",
+      "logical_id",
+      "phase",
+      "role",
+      "attempt",
+      "request_hash",
+      "status",
+      "reserved_usd",
+      "estimated_usd",
+      "started",
+      "ended",
+      "artifact",
+      "returned_model"
+    ],
+    "time_range": [
+      1790050402.3462539,
+      1790210818.294585,
+      12748
+    ],
+    "status_counts": [
+      [
+        "failed",
+        516,
+        2.2414176251
+      ],
+      [
+        "ok",
+        12232,
+        45.57955506375
+      ]
+    ]
+  },
+  "raw_usage": {
+    "prompt_tokens": 62844416,
+    "completion_tokens": 16542289,
+    "total_tokens": 79386705,
+    "artifacts_with_usage": 12644
+  }
+}

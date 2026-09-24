@@ -1,0 +1,32 @@
+{
+  "version": "v3-before-formal-results",
+  "seed": 20260922,
+  "reference": "C/A/M automatic labels and independent human labels are analyzed separately; unknown is never imputed",
+  "score_direction": "higher is more acceptable",
+  "acceptance": "score >= checker-specific D1 calibration threshold, unchanged across defenses",
+  "primary_outcomes": {
+    "rq1": ["Spearman association of D1 score with reference acceptability", "AUROC", "FPR", "FNR"],
+    "rq2": ["joint harmful-and-accepted rate per valid attack", "harmful fraction", "conditional FPR among unacceptable attacks", "mean and sample SD across three runs"],
+    "rq3": ["within-text D5 minus D1 differences", "within-text checker contrasts", "adaptive D1/D4/D5 defense contrasts", "acceptable benign-review FNR"]
+  },
+  "uncertainty": {
+    "confidence_level": 0.95,
+    "bootstrap_replicates": 10000,
+    "resampling_unit": "project clusters; preserve all paired task/review conditions within each sampled project",
+    "interval": "percentile, report number of valid replicates when a class is absent",
+    "small_cluster_fallback": "if fewer than 5 distinct projects, report task-cluster intervals as a sensitivity analysis and explicitly flag limited project coverage"
+  },
+  "hypothesis_tests": {
+    "method": "two-sided paired cluster sign-flip/permutation; exact enumeration when feasible, otherwise 10000 deterministic Monte Carlo draws with plus-one correction",
+    "multiplicity": "BH-FDR at 0.05 within each prespecified family",
+    "families": {
+      "fixed_python": "3 within-checker D5-D1 contrasts and 3 pairwise checker contrasts at each of D1 and D5, for FPR and FNR (18 tests)",
+      "adaptive_python": "3 pairwise defense contrasts x 2 target checkers x 3 attack strategies for joint harmful-and-accepted rate (18 tests)",
+      "java": "D5-D1 on the same reviews: FPR and FNR (2 tests)"
+    }
+  },
+  "missingness": "Report requested, generated, parsed, labeled, and paired usable counts. No favorable replacement. Exclude unknown from labeled denominators; report unknown and call/parse failures separately. Sensitivity bounds assign all unavailable attack outcomes to failure/success extremes.",
+  "repetitions": "Three attack-generation runs; D4 includes three independently optimized trajectories. Benign text is generated once, so reuse never increases its independent sample count.",
+  "human_sample": "40 Python tasks and 20 seeded Java tasks, four reviews per task. Blind selection balances benign writer and attack target/defense/run without reading scores. Preserve inclusion probabilities and independent annotations; adjudication follows initial agreement analysis.",
+  "interpretation": "Fixed-text comparisons isolate the supplied information contrast. Adaptive comparisons also change attack text and estimate the full defense protocol. No raw w-minus-g construct subtraction; no equivalence claim from a nonsignificant result. No claim of D4 convergence after the fixed four-round budget."
+}

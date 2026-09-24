@@ -1,0 +1,24 @@
+{
+  "date": "2026-09-24",
+  "experiment": {"python_formal_defects": 30, "java_formal_defects": 100},
+  "human_confirmation": {
+    "source": "author_report",
+    "reviewers": 2,
+    "background": "PhDs in software engineering",
+    "reported_completed": true,
+    "reported_outcome": "Agreement with Pro-recommended judgments after inspecting assessment materials",
+    "per_item_individual_rating_files_provided": false,
+    "coverage_and_blinding": "Not specified in the recorded confirmation; no full-sample or blind-annotation claim is inferred",
+    "synthetic_human_annotations_created": false
+  },
+  "d4_audit": {
+    "trajectories": 6,
+    "rounds": 24,
+    "accepted_updates": 0,
+    "invalid_candidate_rounds": 16,
+    "missing_class_rounds": 1,
+    "constraint_or_no_improvement_rounds": 7,
+    "all_final_rubrics_equal_D1": true
+  },
+  "archival_status_note": "Original automated analysis status fields are retained as contemporaneous records; this file records later author confirmation and publication audit. No numerical results are overwritten."
+}
