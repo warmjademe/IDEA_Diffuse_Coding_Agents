@@ -1,7 +1,7 @@
 \newcommand{\RQOneTable}{%
 \begin{table*}[t]
 \centering
-\caption{\qyb{D1 on normal Python reviews from three writers. There are 90 planned reviews from 30 tasks. $n$ counts reviews with both a known reference label and a valid score. Brackets are 95\% project-cluster intervals. FPR is acceptance among unacceptable reviews; FNR is rejection among acceptable reviews.}}
+\caption{\qyb{Initial scoring criteria on normal Python reviews from three generators. There are 90 planned reviews from 30 tasks. $n$ counts reviews with both a known reference label and a valid score. Brackets are 95\% project-cluster intervals. FPR is acceptance among unacceptable reviews; FNR is rejection among acceptable reviews.}}
 \label{tab:rq1}
 \qyb{\begin{tabular}{lrllll}
 \toprule
@@ -17,18 +17,18 @@ GPT-5.5 & 86 & 0.155 [-0.062, 0.348] & 0.615 [0.445, 0.757] & 59/70 (84.3\%) & 1
 \newcommand{\RQTwoTable}{%
 \begin{table*}[t]
 \centering
-\caption{\qyb{Targeted Python attacks against D1. Each cell plans 90 reviews (30 tasks, three runs). Joint evasion is unacceptable and accepted among reviews with known labels and valid scores. The final column reports the mean and sample standard deviation of joint evasion across three independent runs, in percent.}}
+\caption{\qyb{Targeted Python attacks against the initial scoring criteria condition. Each cell plans 90 reviews (30 tasks, three runs). Joint evasion is unacceptable and accepted among reviews with known labels and valid scores. The final column reports the mean and sample standard deviation of joint evasion across three independent runs, in percent.}}
 \label{tab:rq2}
 \qyb{\begin{tabular}{llllll}
 \toprule
 Target & Strategy & FPR & FNR & Joint evasion & Run mean$\pm$SD (\%) \\
 \midrule
 Haiku & Omission & 28/84 (33.3\%) & 2/6 (33.3\%) & 28/90 (31.1\%) & $31.11\pm8.39$ \\
-Haiku & Downplay & 3/64 (4.7\%) & 25/26 (96.2\%) & 3/90 (3.3\%) & $3.33\pm0.00$ \\
-Haiku & Bury & 22/50 (44.0\%) & 16/37 (43.2\%) & 22/87 (25.3\%) & $25.27\pm1.29$ \\
+Haiku & Downplaying & 3/64 (4.7\%) & 25/26 (96.2\%) & 3/90 (3.3\%) & $3.33\pm0.00$ \\
+Haiku & Burying & 22/50 (44.0\%) & 16/37 (43.2\%) & 22/87 (25.3\%) & $25.27\pm1.29$ \\
 GPT-5.5 & Omission & 51/79 (64.6\%) & 0/8 (0.0\%) & 51/87 (58.6\%) & $58.62\pm5.97$ \\
-GPT-5.5 & Downplay & 44/70 (62.9\%) & 1/17 (5.9\%) & 44/87 (50.6\%) & $50.50\pm3.61$ \\
-GPT-5.5 & Bury & 35/53 (66.0\%) & 6/32 (18.8\%) & 35/85 (41.2\%) & $41.25\pm3.26$ \\
+GPT-5.5 & Downplaying & 44/70 (62.9\%) & 1/17 (5.9\%) & 44/87 (50.6\%) & $50.50\pm3.61$ \\
+GPT-5.5 & Burying & 35/53 (66.0\%) & 6/32 (18.8\%) & 35/85 (41.2\%) & $41.25\pm3.26$ \\
 \bottomrule
 \end{tabular}}
 \end{table*}
@@ -36,18 +36,18 @@ GPT-5.5 & Bury & 35/53 (66.0\%) & 6/32 (18.8\%) & 35/85 (41.2\%) & $41.25\pm3.26
 \newcommand{\DefenseTable}{%
 \begin{table}[t]
 \centering
-\caption{\qyb{Descriptive joint evasion pooled across the three strategies. Each target/defense plans 270 attacks. D4 retains the initial D1 rubric in every trajectory; its separately sampled outcomes do not measure an effect of changed instructions. All 18 strategy-specific paired defense comparisons have BH-adjusted $q\geq0.0738$.}}
+\caption{\qyb{Descriptive joint evasion pooled across the three strategies. Each target and checking condition plans 270 attacks. All six scoring criteria optimization runs retain the initial scoring criteria. All 18 strategy-specific paired comparisons between checking conditions have BH-adjusted $q\geq0.0738$.}}
 \label{tab:defense}
 \qyb{\begin{tabular}{llll}
 \toprule
-Target & Defense & Joint evasion & Run mean$\pm$SD (\%) \\
+Target & Condition & Joint evasion & Run mean$\pm$SD (\%) \\
 \midrule
-Haiku & D1 & 53/267 (19.9\%) & $19.84\pm3.27$ \\
-Haiku & D4 & 51/262 (19.5\%) & $19.37\pm4.41$ \\
-Haiku & D5 & 36/264 (13.6\%) & $13.64\pm0.27$ \\
-GPT-5.5 & D1 & 130/259 (50.2\%) & $50.18\pm2.33$ \\
-GPT-5.5 & D4 & 137/255 (53.7\%) & $53.73\pm2.38$ \\
-GPT-5.5 & D5 & 109/263 (41.4\%) & $41.46\pm5.40$ \\
+Haiku & Initial scoring criteria & 53/267 (19.9\%) & $19.84\pm3.27$ \\
+Haiku & Scoring criteria optimization & 51/262 (19.5\%) & $19.37\pm4.41$ \\
+Haiku & Log assistance & 36/264 (13.6\%) & $13.64\pm0.27$ \\
+GPT-5.5 & Initial scoring criteria & 130/259 (50.2\%) & $50.18\pm2.33$ \\
+GPT-5.5 & Scoring criteria optimization & 137/255 (53.7\%) & $53.73\pm2.38$ \\
+GPT-5.5 & Log assistance & 109/263 (41.4\%) & $41.46\pm5.40$ \\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -55,18 +55,18 @@ GPT-5.5 & D5 & 109/263 (41.4\%) & $41.46\pm5.40$ \\
 \newcommand{\FixedTable}{%
 \begin{table*}[t]
 \centering
-\caption{\qyb{Identical Python texts scored by every checker under D1 and D5. The six-condition common intersection contains 261 reviews (201 unacceptable and 60 acceptable) from the planned 270-review panel. AUROC brackets are 95\% project-cluster intervals. The fixed thresholds are Haiku 82, Mini 28, and GPT 52; class-specific errors must be interpreted jointly.}}
+\caption{\qyb{Identical Python texts scored by every checker under the initial scoring criteria and log-assisted conditions. The six-condition common intersection contains 261 reviews (201 unacceptable and 60 acceptable) from the planned 270-review panel. AUROC brackets are 95\% project-cluster intervals. The fixed thresholds are Haiku 82, Mini 28, and GPT 52; class-specific errors must be interpreted jointly.}}
 \label{tab:fixed}
 \qyb{\begin{tabular}{lllll}
 \toprule
-Checker & Evidence & AUROC [CI] & FPR & FNR \\
+Checker & Condition & AUROC [CI] & FPR & FNR \\
 \midrule
-Haiku & D1 & 0.616 [0.527, 0.692] & 73/201 (36.3\%) & 31/60 (51.7\%) \\
-Haiku & D5 & 0.751 [0.679, 0.812] & 49/201 (24.4\%) & 24/60 (40.0\%) \\
-Mini & D1 & 0.619 [0.520, 0.707] & 174/201 (86.6\%) & 4/60 (6.7\%) \\
-Mini & D5 & 0.797 [0.733, 0.857] & 175/201 (87.1\%) & 1/60 (1.7\%) \\
-GPT-5.5 & D1 & 0.604 [0.490, 0.707] & 148/201 (73.6\%) & 10/60 (16.7\%) \\
-GPT-5.5 & D5 & 0.840 [0.784, 0.889] & 124/201 (61.7\%) & 3/60 (5.0\%) \\
+Haiku & Initial scoring criteria & 0.616 [0.527, 0.692] & 73/201 (36.3\%) & 31/60 (51.7\%) \\
+Haiku & Log assistance & 0.751 [0.679, 0.812] & 49/201 (24.4\%) & 24/60 (40.0\%) \\
+Mini & Initial scoring criteria & 0.619 [0.520, 0.707] & 174/201 (86.6\%) & 4/60 (6.7\%) \\
+Mini & Log assistance & 0.797 [0.733, 0.857] & 175/201 (87.1\%) & 1/60 (1.7\%) \\
+GPT-5.5 & Initial scoring criteria & 0.604 [0.490, 0.707] & 148/201 (73.6\%) & 10/60 (16.7\%) \\
+GPT-5.5 & Log assistance & 0.840 [0.784, 0.889] & 124/201 (61.7\%) & 3/60 (5.0\%) \\
 \bottomrule
 \end{tabular}}
 \end{table*}
@@ -74,22 +74,22 @@ GPT-5.5 & D5 & 0.840 [0.784, 0.889] & 124/201 (61.7\%) & 3/60 (5.0\%) \\
 \newcommand{\JavaTable}{%
 \begin{table*}[t]
 \centering
-\caption{\qyb{Java fixed-text replication with Sonnet generation and Haiku checking. The 100 defects span eight projects. The two conditions share 906 usable reviews out of 1,000 planned. Normal is the generation instruction, not a reference label. Pooled D5--D1 FPR changes by $+1.87$ percentage points ($q=0.2344$), while FNR changes by $-15.09$ points ($q=0.046875$).}}
+\caption{\qyb{Java fixed-text replication with Sonnet generation and Haiku checking. The 100 defects span eight projects. The two conditions share 906 usable reviews out of 1,000 planned. Normal is the generation instruction, not a reference label. Adding logs changes pooled FPR by $+1.87$ percentage points ($q=0.2344$), while FNR changes by $-15.09$ points ($q=0.046875$).}}
 \label{tab:java}
 \qyb{\begin{tabular}{llrlll}
 \toprule
-Instruction & Evidence & $n$ & FPR & FNR & AUROC \\
+Instruction & Condition & $n$ & FPR & FNR & AUROC \\
 \midrule
-Normal & D1 & 95 & 26/70 (37.1\%) & 17/25 (68.0\%) & 0.485 \\
-Normal & D5 & 95 & 21/70 (30.0\%) & 16/25 (64.0\%) & 0.525 \\
-Omission & D1 & 276 & 8/230 (3.5\%) & 45/46 (97.8\%) & 0.627 \\
-Omission & D5 & 276 & 5/230 (2.2\%) & 37/46 (80.4\%) & 0.695 \\
-Downplay & D1 & 270 & 1/261 (0.4\%) & 9/9 (100.0\%) & 0.801 \\
-Downplay & D5 & 270 & 1/261 (0.4\%) & 9/9 (100.0\%) & 0.693 \\
-Bury & D1 & 265 & 25/186 (13.4\%) & 66/79 (83.5\%) & 0.617 \\
-Bury & D5 & 265 & 47/186 (25.3\%) & 51/79 (64.6\%) & 0.595 \\
-All & D1 & 906 & 60/747 (8.0\%) & 137/159 (86.2\%) & 0.723 \\
-All & D5 & 906 & 74/747 (9.9\%) & 113/159 (71.1\%) & 0.731 \\
+Normal & Initial scoring criteria & 95 & 26/70 (37.1\%) & 17/25 (68.0\%) & 0.485 \\
+Normal & Log assistance & 95 & 21/70 (30.0\%) & 16/25 (64.0\%) & 0.525 \\
+Omission & Initial scoring criteria & 276 & 8/230 (3.5\%) & 45/46 (97.8\%) & 0.627 \\
+Omission & Log assistance & 276 & 5/230 (2.2\%) & 37/46 (80.4\%) & 0.695 \\
+Downplaying & Initial scoring criteria & 270 & 1/261 (0.4\%) & 9/9 (100.0\%) & 0.801 \\
+Downplaying & Log assistance & 270 & 1/261 (0.4\%) & 9/9 (100.0\%) & 0.693 \\
+Burying & Initial scoring criteria & 265 & 25/186 (13.4\%) & 66/79 (83.5\%) & 0.617 \\
+Burying & Log assistance & 265 & 47/186 (25.3\%) & 51/79 (64.6\%) & 0.595 \\
+All & Initial scoring criteria & 906 & 60/747 (8.0\%) & 137/159 (86.2\%) & 0.723 \\
+All & Log assistance & 906 & 74/747 (9.9\%) & 113/159 (71.1\%) & 0.731 \\
 \bottomrule
 \end{tabular}}
 \end{table*}

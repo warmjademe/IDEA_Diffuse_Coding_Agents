@@ -1,8 +1,10 @@
 # Historical reporting corrections
 
 The current 30-Python/100-Java experiment is distinct from the earlier prototype.
-Earlier root scripts and summaries are retained for provenance, not as the
-numerical source for the current paper.
+Earlier root scripts and summaries are retained in
+[Git history at commit 0c1f0bd](https://github.com/warmjademe/IDEA_Diffuse_Coding_Agents/tree/0c1f0bd),
+and have been removed from the current branch. They are not the numerical source
+for the current paper.
 
 The archived `planA_default.json` has 40 tasks (K=3), not 300. Its SHA-256 is
 `a0b36a034c0b4c062fe64a288fc9720deb787f2baf7fb0775f0e245faad41aff`.
@@ -22,8 +24,9 @@ The current study uses its own frozen sample, actual model identifiers, binary
 acceptability construct, complete saved request records, paired statistics, and
 explicit missing denominators. Historical and current values must not be pooled.
 
-A publication audit also established that **all six current D4 trajectories
-retain D1**. The current experiment does not substantiate a claim that changed
-rubrics cause uniform reversal: 16 of 24 rounds fail candidate production/parsing,
+A publication audit also established that **all six current scoring criteria
+optimization runs retain the initial scoring criteria**. The current experiment
+does not substantiate a claim that changed scoring criteria cause uniform
+reversal: 16 of 24 rounds fail candidate production/parsing,
 one lacks both classes, and seven fail the acceptance rule. All attempts and
 proposed criteria are released, including failures.
